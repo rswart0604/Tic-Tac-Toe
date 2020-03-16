@@ -9,7 +9,6 @@ def instantiate_rows(input):
         row_2.append(input[n])
     for n in range(6, 9):
         row_3.append(input[n])
-#
 
 
 def board_print(matrix):
@@ -78,6 +77,7 @@ def check_lines(matrix):
             finished = True
         else:
             finished = False
+# Test
 
 
 def add_coord_to_board(matrix, turn):
