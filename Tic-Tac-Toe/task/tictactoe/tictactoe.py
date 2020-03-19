@@ -77,21 +77,18 @@ def check_lines(matrix):
             finished = True
         else:
             finished = False
-# Test
 
 
 def add_coord_to_board(matrix, turn):
     global coordinates_input
     coordinates_chosen, number_is_int = False, True
     coordinates = ["a", "b"]
-    x, y = 0, 0
+    x, y = 1, 1
     while not coordinates_chosen:
         try:
             coordinates_input = list(input("Enter the coordinates: "))
         except EOFError:
             print("whoops")
-            global finished
-            finished = True
             break
         if coordinates_input:
             coordinates = [n for n in coordinates_input if n != " "]
